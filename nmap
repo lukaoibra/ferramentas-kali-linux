@@ -1,9 +1,9 @@
 NMAP
-Nmap é uma ferramenta de analise de vulnerabilidades open source, criado por Gordon Lyon. Realizado para descobrir hosts, sistemas operacionais, servidores, serviços e portas abertas na rede.
+Nmap é uma ferramenta de analise de vulnerabilidades open source, criado por Gordon Lyon. Realizado para descobrir hosts, sistemas operacionais, servidores, serviços, portas abertas na rede, ataques de brute force.
 Abaixo vou mostrar algumas técnicas e comandos que pode ser feito no nmap.
 Fazendo uma varredura em uma maquina para testes (metasploitable).
 
-Alguns comendas que serão utilizados: 
+Alguns comandas que serão utilizados: 
 
 nmap 192.168.1.58 = vai fazer a busca padrão do nmap
 
@@ -12,3 +12,11 @@ nmap --script ssh-brute 192.168.1.58 = fazer um ataque de brute force
 nmap -top-ports 10 192.168.1.58 = fazer uma varredura das 10 principais portas
 
 nmap --script vuln 192.168.1.58 =  rodar script de vulnerabilidade 
+
+nmap -v 192.168.1.58 = nmap mostra todo o processo até finalizar a varredura.
+
+nmap -sN = descobrir maquinas ativas na rede
+
+nmap -sP = vai informar se o host está ativo
+
+nmap -sV = versão do SO
