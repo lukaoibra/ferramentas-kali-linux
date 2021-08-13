@@ -1,2 +1,2 @@
 # ferramentas-kali-linux
-Algumas ferramentas kali linux utilizadas no curso de pentester.
+Algumas ferramentas de ataques utilizadas no curso de pentester.
